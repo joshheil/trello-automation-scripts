@@ -24,7 +24,7 @@ t.post("/1/lists/" + config.Done.id + "/archiveAllCards", {}, function(err, data
 });
 
 //Rotate lists based on day of week
-for (i = 0; i < currentDay; i++){
+for (i = 0; i < currentDay+1; i++){
   var temp = orderArray.pop();
   orderArray.unshift(temp);
 };
